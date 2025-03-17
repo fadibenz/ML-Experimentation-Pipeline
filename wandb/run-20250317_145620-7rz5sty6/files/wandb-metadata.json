@@ -1,0 +1,31 @@
+{
+  "os": "Linux-6.1.85+-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.11",
+  "startedAt": "2025-03-17T14:56:20.396553Z",
+  "program": "/content/drive/MyDrive/Colab Notebooks/ML-Experimentation-Pipeline/ML-Experimentation-Pipeline/ML-Experementation-Pipeline/main.py",
+  "codePath": "ML-Experementation-Pipeline/main.py",
+  "git": {
+    "remote": "https://github.com/fadibenz/ML-Experimentation-Pipeline",
+    "commit": "4ae67dd001b57cd334d27df4e2c255b4e8057736"
+  },
+  "email": "benzaimafadi@gmail.com",
+  "root": "/content/drive/MyDrive/Colab Notebooks/ML-Experimentation-Pipeline/ML-Experimentation-Pipeline",
+  "host": "b69ed0ec8d8e",
+  "executable": "/usr/bin/python3",
+  "codePathLocal": "ML-Experementation-Pipeline/main.py",
+  "cpu_count": 1,
+  "cpu_count_logical": 2,
+  "disk": {
+    "/": {
+      "total": "115658190848",
+      "used": "44280459264"
+    }
+  },
+  "memory": {
+    "total": "13609431040"
+  },
+  "cpu": {
+    "count": 1,
+    "countLogical": 2
+  }
+}

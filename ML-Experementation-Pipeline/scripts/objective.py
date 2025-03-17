@@ -1,14 +1,14 @@
-import optuna.exceptions
 import torch
-from make_train import train_epoch
-from make_predict import predict
+from data.make_dataset import make_dataset
+from scripts.make_train import train_epoch
+from scripts.make_predict import predict
 from architecture.BasicConvNet import BasicConvNet
 import torch.nn as nn
-from data.make_dataset import make_dataset
 from torchvision.transforms import v2
 import wandb
 import torch.optim as optim
 from pathlib import Path
+import optuna
 
 def objective(trial):
 
@@ -35,8 +35,12 @@ def objective(trial):
     )
 
     epochs = 8
-    model = BasicConvNet()
-
+    model = BasicConvNet(
+      nb_channels=num_filters,
+      hidden_size=hidden_size,
+      p_dropout=dropout_rate
+    )
+    
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device=device)
     optimizer = optim.Adam(model.parameters(),
